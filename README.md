@@ -13,7 +13,55 @@ Most of the program is complete, but you're asked to complete the project by:
 `TODO:` comments have been placed where appropriate for the above 2 parts, however the changes required to get everything work will extend beyond the `TODO:` markers. For example, changing the `story` instance variable will change the setters, getters, and constructors. It is also suggested (see UML below) that you create individual setters for the Identity instance variables. Full details on what is required for each part of the lab follow after the UML diagram.
 
 UML Diagram below shows what the final structure should look like after the changes above:
-![](https://imgur.com/ZGF4yb5.png)
+```mermaid
+---
+config:
+    class:
+        hideEmptyMembersBox: true
+---
+classDiagram
+
+    Comparable <|.. Person : implements
+    Person <-- Identity : inner
+
+    class Person {
+        + DEFAULT_NAME : String$
+        + DEFAULT_PRONOUNS : String$
+        + DEFAULT_BACKGROUND : String$
+        + DEFAULT_PRIVILEGE : int$
+        - name : String
+        - story : Identity
+        - privilege : int
+
+        + Person(name : String, pronouns : String, background : String, privilege : int)
+        + Person()
+        + Person(original : Person)
+
+        + setName(name : String) void
+        + setPronouns(pronouns : String) void
+        + setBackground(background : String) void
+        + setPrivilege(privilege : int) void
+        + setAll(name : String, pronouns : String, background : String, privilege : int) void
+        + getName() String
+        + getPronouns() String
+        + getBackground() String
+        + getPrivilege() int
+        + toString() String
+        + equals(other : Object) boolean
+
+        + compareTo(o : Object) int
+    }
+    class Identity {
+        - pronouns : String
+        - background : String
+
+        + Identity(pronouns : String, background : String)
+        + Identity()
+        
+        + toString() String
+        + equals(other : Object) boolean
+    }    
+```
 
 ## **List of Requirements:**
 ### Part 1 : Implementing `Comparable`
