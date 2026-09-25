@@ -87,31 +87,136 @@ classDiagram
 *Note that your output may differ from the examples shown below, as long as it fulfills the requirements above and the output is clean you have creative liberty on how you provide feedback to the user.*
 
 Welcome/Intro:
-![](https://imgur.com/CwVl45e.png)
+```
+What is your name? Nery
+
+Hello Nery!
+Here is a list of common examples of preferred pronouns:
+Gender Neutral/Nonbinary: they/them/their(s) or ze/hir/irs
+Feminine: she/her/hers
+Masculine: he/him/his
+What are your preferred pronouns? he/him/his/el
+
+Please share a small self-identifying statement about yourself and your background and identity, this can be anything you like!
+For example: I'm a [Nationality / place of origin / ethnicity / sexuality / gender expression / etc.]....
+Tell us about yourself: I'm a Chicano born and raised in LA, proud first-gen college student and child of immigrants
+```
 
 Main Menu:
-![](https://imgur.com/W0g0C5s.png)
+```
+~~~Main Menu~~~
+
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice:
+```
 
 Privilege Questionnaire option (first two questions as example):
-![](https://imgur.com/TmG40Cp.png)
+```
+Please indicate whether the following statements are true or false.
+Input 1 or 2 accordingly.
+
+English is my native language.
+1. True.
+2. False.
+Enter the appropriate answer: 1
+
+My parents graduated college.
+1. True.
+2. False.
+Enter the appropriate answer: 2
+```
 
 Privilege Questionnaire option (results only):
-![](https://i.imgur.com/cEwbPxq.png)
+```
+Your privilege estimate is: 120
+
+Returning to main menu...
+```
 
 Check my estimate option:
-![](https://imgur.com/tapgyKi.png)
+```
+~~~Main Menu~~~
+
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others’.
+4. Exit program.
+What would you like to do?
+Enter choice: 2
+
+My name is Nery, my personal pronouns are he/him/his/el and I'm a Chicano born and raised in LA, proud first-gen college student and child of immigrants
+According to this calculator I ended up with 100 estimated privilege points.
+```
 
 Compare with others option:
-![](https://imgur.com/Hvw9ynW.png)
+```
+~~~Main Menu~~~
+
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others’.
+4. Exit program.
+What would you like to do?
+Enter choice: 3
+
+More privilege than Amira
+More privilege than D'Andra
+Less privilege than Jennifer
+Less privilege than Pete
+
+Returning to main menu.
+```
 
 Exit program option:
-![](https://imgur.com/gUEztBE.png)
+```
+~~~Main Menu~~~
 
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others’.
+4. Exit program.
+What would you like to do?
+Enter choice: 4
+
+Exiting Program...
+
+Thank you for exploring your privilege, it can be uncomfortable but it's a crucial step in our growth and self-reflection. We appreciate you taking that journey with us! :D
+```
 
 
 ## **Hacker Challenge**
-Remember the Privilege Walk video/activity? Try to simulate that visual, it may not capture the experience of doing the activity in person but we can try to visualize the final results at least! Here's an example of what that could look like:
-![](https://imgur.com/WLSUgYh.png)
+Remember the Privilege Walk video context from the prep? Try to simulate that visual, it may not capture the experience of doing the activity in person but we can try to visualize the final results at least! Here's an example of what that could look like:
+```
+~~~Main Menu~~~
+
+1. Take questionnaire to calculate privilege estimate.
+2. Check my estimate. (Defaults to 100 if questionnaire has not been taken.)
+3. Compare my estimate with others'.
+4. Exit program.
+What would you like to do?
+Enter choice: 3
+
+                       -80   0                     280
+                       -------------------------------
+NAME (ESTIMATE):       |     |                       |
+Amira (40)                       A
+D'Andra (-20)              D
+Jennifer (140)                         J
+Pete (200)                                   P
+Nery (120)                           N
+
+Summary of results above:
+More privilege than Amira
+More privilege than D'Andra
+Less privilege than Jennifer
+Less privilege than Pete
+
+Returning to main menu.
+```
 
 Another challenge? You got it! Take a look at the axis of privilege diagram (top of this README file) and add more questions to get plenty of coverage for every line in the diagram. Be thoughtful with your wording so it fits the Yes/No format of answering the questions. The Privilege Walk video may come in handy here! 
 
